@@ -1,0 +1,81 @@
+body {
+    background-color: #9f522e;
+}
+
+.image-container {
+  position: relative;
+  width: 400px;
+  height: 300px; 
+}
+
+.bottom-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1250px;
+  height: 860px;
+  margin-left: 230px;
+  margin-right: 230px;
+}
+
+.top-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 60px;
+  height: 135px;
+  margin-left: 862px;
+  margin-right: 600px;
+  margin-top: 440px;
+}
+
+.tippy-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    mix-blend-mode: color-dodge;
+}
+
+.toppy-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.ollie {
+    position: absolute;
+    top: 680px;
+    left: 1200px
+}
+
+.toppy-image {
+    z-index: 3;
+}
+
+.tippy-image {
+    z-index: 3;
+}
+
+.top-image {
+  z-index: 2; 
+}
+
+.bottom-image {
+  z-index: 1;
+}
+
+.color-change{
+    filter: opacity(100%);
+    transition: filter 0.3s ease;
+}
+
+.color-change:hover{
+    filter: opacity(0%);
+}
+
+html {
+  cursor: url(img/keycursor.png), auto;
+}
+
+a {
+  cursor: url(img/keycursorhover.png), auto;
+}

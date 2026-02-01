@@ -1,0 +1,11 @@
+body {
+    background-color: #6c3217;
+}
+
+html {
+  cursor: url(img/openhandcursor.png), auto;
+}
+
+a {
+  cursor: url(img/closedhandcursor.png), auto;
+}
