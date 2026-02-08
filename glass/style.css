@@ -15,7 +15,8 @@ body {
 /* Style the images inside the grid */
 .column img {
   opacity: 0.8;
-  cursor: pointer;
+  cursor: url(img/cursor2.png), auto;
+  mix-blend-mode: darken;
 }
 
 .column img:hover {
@@ -66,6 +67,14 @@ body {
 }
 
 .backbutton {
+    transition: mix-blend-mode 0.3s normal;
+}
+
+.backbutton:hover {
+    mix-blend-mode: multiply;
+}
+
+.backbutton {
 position: absolute;
 top: 0;
 left: 0;
@@ -75,4 +84,12 @@ margin-top: 300px;
 margin-left: 760px;
 mix-blend-mode: color-burn;
 z-index: 100;
+}
+
+html {
+    cursor: url(img/cursor1.png), auto;
+}
+
+a, .column, .row {
+    cursor: url(img/cursor2.png), auto;
 }

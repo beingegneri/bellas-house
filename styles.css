@@ -42,50 +42,6 @@ body {
   margin-top: 200px;
 }
 
-#jeasper {
-  position: absolute;
-  width: 200px;
-  height: 150px;
-  margin-top: 640px;
-  margin-left: 100px;
-  z-index: 8;
-}
-
-#selim {
-  position: absolute;
-  width: 320px;
-  height: 230px;
-  margin-top: 10px;
-  margin-left: 450px;
-  z-index: 3;
-}
-
-#violet {
-  position: absolute;
-  width: 200px;
-  height: 300px;
-  margin-top: 465px;
-  margin-left: 150px;
-  z-index: 7;
-}
-
-#tristan {
-  position: absolute;
-  width: 200px;
-  height: 300px;
-  margin-top: 200px;
-  z-index: 6;
-}
-
-#shelf {
-  position: absolute;
-  width: 490px;
-  height: 300px;
-  margin-top: 480px;
-  margin-left: 200px;
-  z-index: 8;
-}
-
 .windowclick {
     z-index: 2;
 }
@@ -123,19 +79,79 @@ body {
   z-index: 100;
 }
 
+.preview-container {
+            width: 600px; /* Adjust width as needed */
+            height: 400px; /* Adjust height as needed for the window size */
+            top: 170px;
+            left: 75px;
+        }
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none; /* Removes the default iframe border */
+        }
+
+.front {
+  position: absolute;
+  z-index: 50;
+}
+
+.overlay-link {
+    position: absolute; /* Positions the link relative to the parent container */
+    top: 0;
+    left: 0;
+    width: 100%;        /* Make the link cover the entire iframe area */
+    height: 100%;
+    z-index: 51;         /* Ensure the link is above the iframe */
+    background-color: transparent; /* Keep the link invisible */
+    /* You can also use a slight opacity for testing: opacity: 0.1; */
+}
+
+.key {
+  position: absolute;
+  width: 200px;
+  height: 50px;
+  top: 25px;
+  left: 50px;
+  z-index: 49;
+
+}
+
+.stairs {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  margin-top: 650px;
+  margin-left: 1050px;
+  z-index: 49;
+}
+
+.key, .stairs {
+  transition: mix-blend-mode 0.3s normal;
+}
+
+.key:hover, .stairs:hover {
+  mix-blend-mode: color-burn;
+}
+
+.preview-container {
+  transition: box-shadow 0.3s ease-in-out; /* Smooth transition */
+}
+
+.preview-container:hover {
+  box-shadow: 0 0 20px 10px rgba(255, 255, 255, 0.7); /* White glow */
+}
+
 .hover_image:hover {text-decoration: none}
 .hide {display:none}
 .hover_image:hover img:first-child{display:none}
 .hover_image:hover img:last-child{display:inline-block}
 
-.grab {
-  cursor: url(img/handsclosedcursor.png), auto;
-}
 
 html {
-  cursor: url(img/handsopencursor.png), auto;
+  cursor: url("img/magnifyingglasscursor1.png"), auto;
 }
 
 a {
-  cursor: url(img/handsclosedcursor.png), auto;
+  cursor: url("img/magnifyingglasscursor2.png"), auto;
 }

@@ -1,0 +1,56 @@
+body {
+    background-color: #273024;
+}
+
+.bottom-image {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 1400px;
+  height: 750px;
+  margin-left: 150px;
+  margin-top: 50px;
+  mix-blend-mode: multiply;
+}
+
+.bottom-image {
+  z-index: -1;
+}
+
+.box {
+    position: absolute;
+    margin-left: 170px;
+    margin-top: 30px;
+}
+
+.color {
+    mix-blend-mode:hard-light;
+}
+
+.backbutton {
+    transition: mix-blend-mode 0.3s normal;
+}
+
+.backbutton:hover {
+    mix-blend-mode: multiply;
+}
+
+.backbutton {
+  position: absolute;
+top: 0;
+left: 0;
+width: 180px;
+height: 250px;
+margin-top: 300px;
+margin-left: 760px;
+mix-blend-mode: color-burn;
+z-index: 100;
+}
+
+html {
+  cursor: url("paintings/img/handsopencursor.png"), auto;
+}
+
+a {
+  cursor: url("paintings/img/handsclosedcursor.png"), auto;
+}
